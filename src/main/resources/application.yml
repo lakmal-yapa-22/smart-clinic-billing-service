@@ -3,8 +3,8 @@ spring:
     name: billing-service
 
   config:
-    import: "configserver:"
+    import: "configserver:http://10.148.0.8:9000"
 
   cloud:
     config:
-      uri: http://localhost:8888
+      uri: http://10.148.0.8:9000
